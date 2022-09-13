@@ -12,8 +12,8 @@ import {
   UseGuards,
 } from '@nestjs/common';
 
-import { Serialize } from 'src/interceptors/serialize.interceptor';
-import { AuthGuard } from 'src/guards/auth.guard';
+import { Serialize } from '../interceptors/serialize.interceptor';
+import { AuthGuard } from '../guards/auth.guard';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UpdateUserDto } from './dtos/update-user.dto';
 import { UsersService } from './users.service';
