@@ -1,13 +1,21 @@
-### Create a new user
+### Create a new reports
 POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-    "make": "toyota",
-    "model": "corolla",
-    "year": 1981,
+    "make": "tesla",
+    "model": "model-X",
+    "year": 1982,
     "mileage": 10000,
     "lng": 0,
     "lat": 0,
     "price": 500000
+}
+
+### Update Approved report
+PATCH  http://localhost:3000/reports/7
+Content-Type: application/json
+
+{
+    "approved": true
 }
